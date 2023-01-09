@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 5px;
+	box-sizing: border-box;
+	text-decoration: none;
+
+}
+body{
+	font-family: 'Droid Serif', serif;
+}
+
+.padre{
+	display: flex;
+	flex-flow: column nowrap;
+	background:#f7f7f7;
+}
+
+.margen-interno{
+	padding: 0 50px;
+}
+
+    .header{
+	background: url(imagenes/f-1.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+	display: flex;
+	flex-flow: column nowrap;
+	}
+		.menu{
+			background: rgba(0,0,0,.1);
+			display: flex;
+			flex-flow: row nowrap;
+			height: 60px;
+			align-items: center;
+			border-bottom: 1px solid rgba(255,255,255,.5)
+			
+		}
+			.logo{
+				
+				flex: 1 1 auto;
+				text-align: center;
+			}
+				.logo a {
+				color: #fff;
+				text-align: center;
+				font-size: 33px;
+				
+				}
+				.logo a:hover{
+					color:rgb(40, 61, 180);
+				}
+			.nav{
+				
+				flex: 5 1 auto;
+				
+			}
+					.nav a{
+						color: #fff;
+						font-size: 11px;
+						text-transform: uppercase;
+						padding: 0 10px;
+						letter-spacing: 2px;
+
+					}
+					.social a:hover{
+					color:#28B463;
+				}
+					.nav a:hover{
+					color:#28B463;
+					}
+
+
+			.social{
+				
+				flex: 1 1 auto;
+				display: flex;
+			
+			}
+				.social a{
+					font-size: 18;
+					color: #fff;
+					padding: 0 5px;
+
+				}
+		.texto-principal{
+			height: 580px;
+			display: flex;
+			align-items: center;
+		}	
+			h1{
+				font-size: 21px;
+				font-family: 'Droid Serif', serif;
+				color: #fff;
+				font-weight: 300;
+				text-align: center;
+				line-height: 1.6;
+				
+				
+
+			}
+    .section{
+	background: #ececec;
+	 padding-top: 10px;
+	}
+	.section h5{
+			font-size: 26px;
+			color: #333;
+			text-align: center;
+				}
+
+
+		.articulos{
+			background: #ececec;
+			flex: 2 1 auto;
+			display: flex;
+			flex-flow: row wrap;
+			padding-top: 50px;
+			}
+			
+			.article{
+				color: #444;
+				font-size: 13px;
+				letter-spacing: 1px;
+				flex: 1 1 32%;
+				margin: 5px 5px 5px 5px;
+				background: #ececec;
+
+			}
+			article p{
+				margin: 5px 5px 5px 5px;
+			}
+
+			.article img{
+				width: 100%;
+				
+			}
+			
+			h3{
+				color: #fff;
+				font-size: 13px;
+				padding: 0px 0 10px 10px;
+				margin-top: -80px;
+			}
+			h2{
+				font-size: 25px;
+				text-transform: uppercase;
+				padding: 0px 0 10px 10px;
+				color: #fff;
+			}
+			
+    .section2{
+	background: #ececec;
+	 padding-top: 10px;
+
+	}
+	
+
+		.articulos2{
+			background: #ececec;
+			flex: 2 1 auto;
+			display: flex;
+			flex-flow: row wrap;
+			
+			
+			
+		}
+		.section2 h2{
+			font-size: 26px;
+			color: #333;
+			text-align: center;
+			
+			
+			
+		}
+
+		.i {
+			float: left;
+		
+		}
+		.article2 p {
+			text-align: justify;
+		}
+			.article2{
+				background: #ececec;
+				flex: 1 1 33%;
+				
+
+			}
+
+
+@media all and (max-width: 800px){		
+	.menu{
+		flex-direction: column;
+		height: auto;	
+		}
+	.logo{
+		width: 85%;
+		}
+	.nav{
+		width: 85%;	
+		}
+	.social{
+			width: 85%;
+			}
+			}	
+@media all and (max-width: 600px){
+			.articulos{
+				flex-direction: column;
+			}
+			.articulos2{
+				flex-direction: column;
+			}
+			}
