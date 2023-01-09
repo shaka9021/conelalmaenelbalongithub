@@ -1,333 +1,486 @@
 *{
-    margin: 0px;
-    padding: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+
+header{
+	width: 100%;
+	background: rgba(0,0,0,.20);
+	height: 80px;
+	position: fixed;	
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.705);
+
+}
+.ancho{
+	width: 80%;
+	/*background: red;*/
+	height: 70px;
+	margin: auto;
+}
+.logo{
+	width: 30%;
+	height: 70px;
+	/*background: blue;*/
+	float: left;
+	padding-top: 10PX;
+	box-sizing: border-box;
+	text-align: center;
+}
+.logo p a{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: rale;
+	vertical-align: middle;
+}
+
+nav{
+	display: right;
+	width: 70%;
+	height: 70px;
+	/*background: olive;*/
+	float: left;
+	text-align: right;
+	padding-top: 24px;
 	box-sizing: border-box;
 	text-decoration: none;
-
+	
 }
-body{
-	font-family: 'Lora', serif;
+nav ul li {
+	display:initial;
+	
+	
+}
+nav ul li a{
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: rale;
+	
 }
 
-.padre{
-	display: flex;
-	flex-flow: column nowrap;
-	background:#f7f7f7;
+
+
+nav ul li a:hover{
+	color: rgb(37, 165, 69);}
+
+@font-face{
+	font-family: rale;
+	src: url(fuentes/Raleway-Regular.ttf);
 }
 
-.margen-interno{
-	padding: 0 50px;
-}
-
-    .header{
+#particles-js{
 	background: url(imagenes/f-1.jpg);
+	background-repeat: no-repeat; /*No se repetira*/
+	background-size: cover;/*imagen 100% del ancho*/
 	background-position: center;
 	background-attachment: contain;
-	background-size: cover;
-	display: flex;
-	flex-flow: column nowrap;
 	background-color: rgba(255,255,255,.5)
+
+}
+.ancho-letras{
+	top: 200px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #FBFBEF;
+	z-index: 1;
 	}
-		.menu{
-			background: rgba(0,0,0,.40);
-			display: flex;
-			flex-flow: row nowrap;
-			height: 60px;
-			align-items: center;
-			border-bottom: 1px solid rgba(255,255,255,.40)
-			
-		}
-			.logo{
-				
-				flex: 1 1 auto;
-				
-			}
-				.logo a {
-				color: #fff;
-				font-size: 33px;
-				font-family: 'Raleway', sans-serif;
-			
-				}
-				.logo a:hover{
-					color:#111;
-				}
-			.nav{
-				
-				flex: 4 1 auto;
-				
-			}
-					.nav a{
-						color: #ececec;
-						font-size: 15px;
-						text-transform: uppercase;
-						padding: 0 10px;
-						letter-spacing: 2px;
-						font-family: 'Raleway', sans-serif;
 
-					}
-					.social a:hover{
-					color:#3b5998;
-
-				}
-					.nav a:hover{
-					color:#111;
-					}
-
-			.social{
-				
-				flex: 1 1 auto;
-				display: flex;
-			
-			}
-				.social a{
-					font-size: 18;
-					color: #fff;
-					padding: 0 5px;
-				}
-		.texto-principal{
-			height: 580px;
-			display: flex;
-			align-items: center;
-			flex-wrap: wrap;
-			align-content: center;
-			background: rgba(0,0,0,.40);
-		}	
-		.titulo{
-				
-			width: 100%;
-			align-items: center;
-			padding: 10px;			
-		}
-		.titulo h2{
-			font-family: 'Raleway', sans-serif;
-			color:#ECE0F8;
-			font-weight: 300;
-			line-height: 1.6;
-			text-align: center;
-			font-size: 33px;			
-		}
-			.texto-principal h1{
-				font-size: 21px;
-				font-family: 'Raleway', sans-serif;
-				color: #FFFFFF;
-				font-weight: 300;
-				text-align: center;
-				line-height: 1.6;
-			}
-		
-
-    .section{
-	display: flex;
-	background: #F7F7F7;
+	.letras-slider{
+		width: 80%;
+		margin: auto;
+	}
+	.letras-slider h1{
+		color: #fff;
+		font-family: rale;
+		font-size: 70px;
+		text-align: right;
 	
 	}
-	.titulo1{
-			width: 100%;
-		
-	}
-
-		
-	.titulo2{
-			width: 100%;
-			align-items: center;
-		
+	
+	.letras-slider p{
+		color: #fff;
+		font-family: rale;
+		font-size: 20px;
+		padding-top: 50px;
+		text-align: justify;
+	
 	}
 	
-	.titulo1 h2{
-		text-align: center;
+	@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+
+
+	
+	
+	
+	
+	h1, h2, h4, h5, h6 {
+		text-transform: uppercase;
+		color: #444;
+		font-family: rele;
+	}
+	h2{
+		font-size: 26px;
 		color: #333;
-		
-
+		text-align: center;
 	}
-		.articulos{
-			background: #ececec;
-			flex: 2 1 auto;
-			display: flex;
-			flex-flow: row wrap;
-			padding-top: 20px;
-			}
-			
-			.article{
-				color: #444;
-				font-size: 13px;
-				letter-spacing: 1px;
-				flex: 1 1 32%;
-				margin: 5px 5px 5px 5px;
-				background: #ececec;
-			}
 
-			.titulo2 h2{
-			
-			color: #333;
-			padding-bottom: 20px;
-			
-		}
-			
+	h3{
+		font-family: Josefin Sans, sans-serif;
+		font-size: 20px;
+		line-height: 1.5;
+		padding-top: 20px;
+		font-weight: normal;
+		color: #777;
+		text-align: justify;
 		
-
-			.article p{
-				margin: 5px 5px 5px 5px;
-				padding-top: 15px;
-			}
-
-			.article img{
-				width: 100%;
-				
-			}
-			
-			h3{
-				color: #fff;
-				font-size: 13px;
-				padding: 0px 0 10px 10px;
-				margin-top: -80px;
-			}
-			h2{
-				font-size: 25px;
-				text-transform: uppercase;
-				padding: 0px 0 10px 10px;
-				color: #fff;
-			}
-			
-    .section2{
-	display: flex;
-	background: #F7F7F7;
-	flex-flow: row wrap;
-	}
-		.articulos2{
-			background: #ececec;
-			flex: 2 1 auto;
-			display: flex;
-			flex-flow: row wrap;
-			padding-top: 20px;
-		}
-
 	
-	.section2 h2{
-			font-size: 26px;
-			color: #333;
-			text-align: center;
-				
-		}
 
-		.i {
-			float: left;
+	}
+
+	h4{
+		margin-top: 15px;
+		font-size: 16px;
+		font-weight: normal;
+		padding: 10px 0;
+		font-size: 12px;
+	}
+	h5{
+		font-family: Josefin Sans, sans-serif;
+		line-height: 1.5;
+	}
+
+	p{
+		color:#333;
+		font-family: Josefin Sans, sans-serif;
 		
-		}
-		.article2 p {
-			text-align: justify;
-		}
-			.article2{
-				background: #ececec;
-				flex: 1 1 33%;
-			
-				
 
-			}
-			@media only screen and (max-width:480px){	
-			.padre {flex-flow: column nowrap
-			}
-			.red{
-				display: none;
-			}
-			header{
-				height: 55px;
-			}
-			.ancho{
-				width: 100%;
-				margin: 0;
-				padding: 0;
-			}
-			.logo {
-				width: 100%;
-				height: 35px;
-				text-align: left;
-				padding: 0;
-				margin: 0;
-			}
-			.logo p a{
-				width: 100%;
-				font-size: 15px;
-				
-				margin: 0;
-			}
-			nav{
-				width: 100%;
-				text-align: right;
-				padding: 0;
-				margin: 0;
-			}
-			nav ul li a{
-				font-size: 7px;
-			}
-			.slideInUp{
-				display: none;
-			}
-			.letras-slider h1{
-				font-size: 35px;
-			}
-			.columnax3{
-				width: 100%;
-			}
-			
-			.formulario{
-				width: 85%;
-				margin: 0;
-			}
-			
-			.caja-1{
-				width: 100%;
-			}
-			.caja-2{
-				width: 100%;
-			}
-			.datos{
-				width: 100%;
-			}
-			.correo{
-				width: 100%;
-			}
-	@media only screen and  (max-width: 1020px){		
-	.menu{
+	}
+	.wap{
+		width: 90%;
+		margin: auto;
+		
+	}
+.bienvenidos{
+	margin-top: 50px;
+	text-align: center;
+	padding-top:50px;
+
+}
+.HISTORIA h2{ 
+	padding-top: 50PX;
+	
+}
+
+
+.contenedor-columnas{
+	width: 100%;
+	margin: auto;
+	margin-bottom: 50px; 
+
+}
+.columnax3{
+	width: 33.333%;
+	float: 	left;	
+	text-align: left;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	margin: auto;
+
+}
+.columnax3 imagen.img{
+	width: 100%;
+}
+
+.banner-1 {
+	width: 100%;
+	background: rgb(246, 252, 251);
+	clear: both;
+	padding-top: 0PX;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	text-align: center;
+	box-sizing: border-box;
+	
+}
+/*.banner-1:hover{
+    background: #444;
+	
+}
+.banner-1 h3{
+    color: #fff;
+    font-size: 32PX;
+}
+.banner-1 a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}*/
+.i{
+	height: 64px;
+	width: 64px;
+	float: left;
+	padding-right: 20px;
+}
+ .columnax3 h4{
+	 padding-bottom: 10px;
+	 font-size: 20px;
+	 font-weight: bold;
+	  }
+.columnax3 p{
+	text-align: justify;
+}
+.banner-2{
+
+	margin-top: 50px;
+	background: url(imagenes/b-3.jpg);
+	float: left;
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat; /*No se repetira*/
+	background-size: cover;/*imagen 100% del ancho*/
+	background-attachment: fixed;/*Posicion fija para la imagen*/	
+	text-align: center;
+}
+
+.banner-2 h3{
+	background: rgba(0,0,0,.5);
+	color: #fff;
+    font-size: 32PX;
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 6%;
+	margin-block-start: 100px;
+}
+
+.banner-1 a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+.red{
+	position: fixed;
+	top: 200px;
+	z-index: 100;
+	left: 0;	
+}
+
+#facebook a{
+	background: #3b5998;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 45px;
+}
+#facebook a:hover{
+	background: #000;
+	padding: 10px 50px;
+}
+#youtube a{
+	background: #bb0000;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 45px;
+}
+#youtube a:hover{
+	background: #000;
+	padding: 10px 50px;
+}
+
+
+#twitter a{
+	background: #55acee;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 45px;
+}
+
+#twitter a:hover{
+	background: #000;
+	padding: 10px 50px;
+}
+#correo a{
+	background: #dd4b39;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 45px;
+}
+#correo a:hover{
+	background: #000;
+	padding: 10px 50px;
+}
+
+.formulario{
+	float: right;
+	margin: 0 auto;
+	color: #999;
+	width: 100%;
+}
+.caja-1{
+	width: 500px;
+	height: 50px;
+	margin: 5px;
+	padding: 5px;
+
+}
+
+.formulario h4{
+	font-size: 20px;
+	text-align: center;
+	font: bold;
+}
+.caja-2{
+	width: 1012px;
+	height: 100px;
+	margin: 5px;
+	font-size: 14px;
+	padding: 5px;
+}
+.contratar-a{
+	background: #85c34a;
+	text-decoration: none;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px; 
+	letter-spacing: 1px;
+	width: 1040px;
+	margin: 5px;
+	height: 50PX;
+}
+
+.contratar-a:hover{
+	background: #777;
+}
+
+.bienvenidos h3{
+	margin: 20px;
+}
+
+		
+@media only screen and (max-width:1165px){
+	.off{
+		display: none;
+		
+	}
+	nav ul li a{
+		font-size: 40px;
+	}
+	.caja-2{
+		width: 500px;
+		margin: 20px;
+	}
+	.contratar-a {
+		width:525px;
+	}
+
+
+	.logo p a{
+		font-size: 25px;
+	}
+	.contenedor-columnas{
 		flex-direction: column;
-		height: auto;	
-		}
-	.logo{
-		width: 85%;
-		}
-	.nav{
-		width: 85%;	
-		}
-	.social{
-			width: 85%;
-			}
-		h1{
-			font-size: 15px;
-		}
-		.texto-principal{
-			height: 450px;
-		}
-				
-@media all and (max-width: 762px){
-			.articulos{
-				flex-direction: column;
-			}
-			.articulos2{
-				flex-direction: column;
-			}
-@media all and (max-width: 650px){
-			.off{
-				display: none;
-			}
-			.nav a{
-				align-content: center;
-			
-			}
-
-		
-			
-		}
+	}
+	.imagen{
+		width: 100%;
+	
+	}
+	.columnax3{
+		width: 100%;
 
 	}
 }
-			}
-			
+
+	
+
+	
+@media only screen and (max-width:867px){
+	.logo p a{
+		font-size: 23px;
+}
+
+
+	
+}
+
+
+@media only screen and (max-width:480px){
+
+nav {
+	padding-top: 14px;
+	padding-right: 14PX;
+}		
+
+nav ul li a{
+	font-size: 25px;
+}
+
+.logo p a {
+		font-size: 10px;	
+	}	
+.red{
+	display: none;
+}
+header{
+	height: 55px;
+}
+.ancho{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.slideInUp{
+	display: none;
+}
+.letras-slider h1{
+	font-size: 35px;
+}
+.imagen{
+	width: 100%;
+
+}
+.columnax3{
+	width: 100%;
+}
+
+.formulario{
+	width: 100%;
+	margin: 0;
+}
+
+.caja-1{
+	width: 250px;
+	height: 30px;
+	padding: 5px;
+}
+.caja-2{
+	width: 250px;
+}
+
+
+
+.contratar-a {
+	width: 270px;
+	
+}
+
+}
